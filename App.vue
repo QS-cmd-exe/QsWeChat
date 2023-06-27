@@ -1,27 +1,27 @@
 <script>
 export default {
-	onLaunch: function() {
+	onLaunch: function () {
 		console.log('App Launch');
 
-		setTimeout(() => {
-			uni.setTabBarBadge({
-				index: 1,
-				text: '31'
-			});
-			uni.showTabBarRedDot({
-				index: 3
-			});
-		}, 1000);
+		// setTimeout(() => {
+		// 	uni.setTabBarBadge({
+		// 		index: 1,
+		// 		text: '31'
+		// 	});
+		// 	uni.showTabBarRedDot({
+		// 		index: 3
+		// 	});
+		// }, 1000);
 	},
-	onShow: function() {
+	onShow: function () {
 		console.log('App Show');
 	},
-	onHide: function() {
+	onHide: function () {
 		console.log('App Hide');
 	}
 };
 </script>
 
 <style>
-/*每个页面公共css */ 
+/*每个页面公共css */
 </style>

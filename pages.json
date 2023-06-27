@@ -1,38 +1,34 @@
 {
 	"pages": [
+		{
+			"path": "pages/login/login",//登录页面
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+		},
 		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/tabbar/tabbar-1/tabbar-1",
-					"style": {}
-		},
-		{
-			"path": "pages/tabbar/tabbar-2/tabbar-2",
+			"path": "pages/tabbar/main/main",
 			"style": {}
 		},
 		{
-			"path": "pages/tabbar/tabbar-3/tabbar-3",
+			"path": "pages/tabbar/orderingFoodBar/orderingFood",
 			"style": {}
 		},
 		{
-			"path": "pages/tabbar/tabbar-4/tabbar-4",
+			"path": "pages/tabbar/poitnsMallBar/pointsMall",
 			"style": {}
 		},
 		{
-			"path": "pages/tabbar/tabbar-5/tabbar-5",
+			"path": "pages/tabbar/orderManageBar/orderManage",
 			"style": {}
 		},
 		{
-			"path": "pages/tabbar-3-detial/tabbar-3-release/tabbar-3-release",
-			"style": {}
-		},
-		{
-			"path": "pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video",
-			"style": {}
-		},
-		{
-			"path": "pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa",
+			"path": "pages/tabbar/userBar/user",
 			"style": {}
 		}
+		
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -41,48 +37,41 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
-		"borderStyle": "black",
-		"backgroundColor": "#333",
+		 
+		"backgroundColor": "#fffefd",
 		"color": "#8F8F94",
-		"selectedColor": "#f33e54",
+		"selectedColor": "#C93425",
 		"list": [{
-				"pagePath": "pages/tabbar/tabbar-1/tabbar-1",
+				"pagePath": "pages/tabbar/main/main",
 				"iconPath": "static/img/tabbar/home.png",
 				"selectedIconPath": "static/img/tabbar/homeactive.png",
 				"text": "首页"
 			},
 			{
-				"pagePath": "pages/tabbar/tabbar-2/tabbar-2",
-				"iconPath": "static/img/tabbar/guanzhu.png",
-				"selectedIconPath": "static/img/tabbar/guanzhuactive.png",
-				"text": "关注"
+				"pagePath": "pages/tabbar/orderingFoodBar/orderingFood",
+				"iconPath": "static/img/tabbar/orderingFood.png",
+				"selectedIconPath": "static/img/tabbar/orderingFoodAactive.png",
+				"text": "点餐"
 			},
-			//#ifdef MP-WEIXIN
+		
 			{
-				"pagePath": "pages/tabbar/tabbar-3/tabbar-3",
-				"iconPath": "static/img/tabbar/add.png",
-				"selectedIconPath": "static/img/tabbar/addactive.png",
-				"text": "发布"
+				"pagePath": "pages/tabbar/poitnsMallBar/pointsMall",
+				"iconPath": "static/img/tabbar/shoping.png",
+				"selectedIconPath": "static/img/tabbar/shopingactive.png",
+				"text": "积分商城"
 			},
-			//#endif
-			//#ifndef MP-WEIXIN
+			
 			{
-				"pagePath": "pages/tabbar/tabbar-3/tabbar-3",
-				"iconPath": "static/img/tabbar/add.png",
-				"selectedIconPath": "static/img/tabbar/addactive.png"
-			},
-			//#endif
-			{
-				"pagePath": "pages/tabbar/tabbar-4/tabbar-4",
-				"iconPath": "static/img/tabbar/news.png",
-				"selectedIconPath": "static/img/tabbar/newsactive.png",
-				"text": "消息"
+				"pagePath": "pages/tabbar/orderManageBar/orderManage",
+				"iconPath": "static/img/tabbar/ordermanage.png",
+				"selectedIconPath": "static/img/tabbar/ordermanageactice.png",
+				"text": "订单管理"
 			},
 			{
-				"pagePath": "pages/tabbar/tabbar-5/tabbar-5",
+				"pagePath": "pages/tabbar/userBar/user",
 				"iconPath": "static/img/tabbar/me.png",
 				"selectedIconPath": "static/img/tabbar/meactive.png",
-				"text": "我"
+				"text": "我的"
 			}
 		]
 	}
